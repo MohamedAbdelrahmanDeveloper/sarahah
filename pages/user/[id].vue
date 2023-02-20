@@ -1,6 +1,23 @@
 <template>
   <div class="py-10">
     <div v-if="user" class="max-w-3xl mx-auto card shadow-xl">
+      <Head>
+        <Title>Sarahah - {{user.displayName}}</Title>
+        <meta name="description" :content="user.bio.data"/>
+        <Meta name="twitter:image:src" :content="user.photoURL" />
+        <Meta name="twitter:site" :content="user.uid" />
+        <Meta name="twitter:card" content="summary" />
+        <Meta name="twitter:title" :content="user.displayName" />
+        <Meta name="twitter:description" :content="user.bio.data" />
+        <Meta property="og:image" :content="user.photoURL" />
+        <Meta property="og:image:alt" :content="user.bio.data" />
+        <Meta property="og:site_name" :content="user.displayName" />
+        <Meta property="og:type" content="profile" />
+        <Meta property="og:title" :content="user.displayName" />
+        <Meta property="og:url" content="" />
+        <Meta property="og:description" :content="user.bio.data" />
+        <Meta property="profile:username" :content="user.displayName" />
+      </Head>
       <div class="profile p-5 ">
         <div class="flex flex-col items-center">
             <div class="avatar" :class="{ 'offline': !isOnline, 'online': isOnline }">

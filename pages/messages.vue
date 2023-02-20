@@ -1,4 +1,7 @@
 <template>
+    <Head>
+        <Title>Sarahah - Messages</Title>
+    </Head>
     <div class="py-5">
         <div class="max-w-3xl mx-auto md:p-5">
             <div v-if="typeof messages === 'object'" class="profile flex flex-col space-y-4">
@@ -23,7 +26,7 @@
                             </div>
                         </div>
                         <div :class="{'text-right arabic' : /[\u0600-\u06FF]/.test(messages[idKey].message)}" class="text-left my-6">
-                            <p class="text-base leading-7">
+                            <p class="text-base leading-7 break-words">
                                 {{messages[idKey].message}}
                             </p>
                         </div>

@@ -1,5 +1,5 @@
 <template>
-      <div class="hero min-h-[77vh] md:min-h-[90vh]" >
+  <div class="hero min-h-[77vh] md:min-h-[90vh]" >
         <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div class="card-body">
             <h2 class='text-2xl font-semibold'>Login</h2>

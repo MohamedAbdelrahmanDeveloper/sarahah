@@ -1,4 +1,7 @@
 <template>
+    <Head>
+        <Title>Sarahah - {{ title }}</Title>
+    </Head>
     <div class="navbar bg-base-100">
         <div class="flex-1">
             <NuxtLink to="/" class="btn btn-ghost normal-case text-xl">Sarahah</NuxtLink>
@@ -38,7 +41,7 @@
 export default {
     data() {
         return {
-            user: false
+            user: false,
         }
     },
     methods: {
@@ -52,6 +55,11 @@ export default {
         },
         limit (string = '', limit = 0) {  
             return string.substring(0, limit)
+        }
+    },
+    computed : {
+        title () {
+            return this.$route.matched[0].components.default.__name ? this.$route.matched[0].components.default.__name.charAt(0).toUpperCase() + this.$route.matched[0].components.default.__name.slice(1) : 'Home';
         }
     },
     mounted() {

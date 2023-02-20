@@ -1,5 +1,9 @@
 <template>
     <div class="min-h-[77vh] md:min-h-[90vh]" v-if="user" >
+        <Head>
+            <Title>Sarahah - {{user.displayName}}</Title>
+            <Meta name="description" :content="user.bio.data" />
+        </Head>
         <div class="card max-w-2xl mx-auto bg-base-100 shadow-xl mt-14" v-if="user.bio">
             <div class="p-4 -mb-5 flex justify-end">
                 <svg class="w-6 h-6" @click="isEidtro = !isEidtro" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
