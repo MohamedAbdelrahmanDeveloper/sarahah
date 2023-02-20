@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/moment": "^1.6.1",
+    "@nuxtjs/tailwindcss": "^6.2.0",
+    "nuxt": "^3.0.0"
+  },
+  "dependencies": {
+    "daisyui": "^2.47.0",
+    "firebase": "^9.15.0"
+  }
+}

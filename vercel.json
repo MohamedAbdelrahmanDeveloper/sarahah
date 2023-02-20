@@ -1,0 +1,15 @@
+{
+    "builds": [
+      {
+        "src": "nuxt.config.ts",
+        "use": "@nuxtjs/vercel-builder",
+        "config": {}
+      },
+      {
+        "src": "server/**/*.ts",
+        "use": "@vercel/node"
+      }
+    ]
+  }
+
+  
