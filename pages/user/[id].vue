@@ -179,7 +179,7 @@ export default {
   },
   async mounted() {
     let id = this.$route.params.id
-    if (id === "m7md0a") {
+    if (id === "MohamedAbdelrahmanDeveloper") {
       await getUser('NbQM3zD8MHgWJeN32fOxw5HKStr1').then((e) => {
         if (typeof e === "object") {
           e.uid = "NbQM3zD8MHgWJeN32fOxw5HKStr1";
